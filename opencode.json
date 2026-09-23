@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": true,
+  "permission": {
+    "bash": {
+      "*": "allow",
+      "rm *": "deny",
+      "git *": "allow",
+      "git commit *": "allow",
+      "git push *": "deny",
+      "grep *": "allow"
+    },
+    "read": {
+      "*": "allow",
+      "*.dev.vars": "deny",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+    "skill": "allow",
+    "webfetch": "allow",
+    "websearch": "allow"
+  }
+}
