@@ -1,0 +1,37 @@
+<!-- Kapwa Label — pairs with any form control. Use kapwa-label-* utilities for sizing. -->
+<section data-demo="default">
+  <div class="space-y-6 max-w-md">
+    <div>
+      <label for="label-username" class="kapwa-label-md block text-[var(--color-kapwa-text-strong)]"> Username </label>
+      <input
+        id="label-username"
+        type="text"
+        placeholder="Enter your username"
+        class="mt-2 flex h-9 w-full rounded-md border border-[var(--color-kapwa-border-strong)] bg-[var(--color-kapwa-bg-surface)] px-3 py-1 text-base text-[var(--color-kapwa-text-strong)] shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-[var(--color-kapwa-text-strong)] placeholder:text-[var(--color-kapwa-text-disabled)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-kapwa-border-focus)] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+      />
+    </div>
+
+    <div>
+      <label for="label-notes" class="kapwa-label-sm block text-[var(--color-kapwa-text-strong)]">
+        Short description <span class="text-[var(--color-kapwa-text-disabled)]">(optional)</span>
+      </label>
+      <input
+        id="label-notes"
+        type="text"
+        placeholder="A brief note about your application"
+        class="mt-2 flex h-9 w-full rounded-md border border-[var(--color-kapwa-border-strong)] bg-[var(--color-kapwa-bg-surface)] px-3 py-1 text-base text-[var(--color-kapwa-text-strong)] shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-[var(--color-kapwa-text-strong)] placeholder:text-[var(--color-kapwa-text-disabled)] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--color-kapwa-border-focus)] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+      />
+    </div>
+
+    <div>
+      <span class="kapwa-label-lg block text-[var(--color-kapwa-text-strong)]">Confirmation</span>
+      <label class="mt-2 flex items-center gap-2 kapwa-label-md text-[var(--color-kapwa-text-support)]">
+        <input
+          type="checkbox"
+          class="h-4 w-4 rounded-sm border-[var(--color-kapwa-border-strong)] text-[var(--color-kapwa-bg-brand-default)] focus-visible:ring-[var(--color-kapwa-border-focus)]"
+        />
+        I agree to the data privacy terms
+      </label>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,111 @@
+<!-- Kapwa Table — data table inside a Card with status badges. -->
+<section data-demo="default">
+  <article
+    role="article"
+    aria-label="Applications"
+    class="overflow-hidden rounded-lg border border-[var(--color-kapwa-border-weak)] bg-[var(--color-kapwa-bg-surface)] shadow-xs mb-8"
+  >
+    <div role="heading" aria-level="2" class="border-b border-[var(--color-kapwa-border-weak)] p-4 md:p-6">
+      <h2 class="text-2xl font-semibold">Recent permit applications</h2>
+      <p class="text-[var(--color-kapwa-text-support)]">Manage applications across all channels</p>
+    </div>
+    <div role="region" aria-label="Application list" class="p-4 md:p-6">
+      <div class="overflow-x-auto space-y-8">
+        <table class="min-w-full divide-y divide-[var(--color-kapwa-border-weak)]">
+          <thead class="bg-[var(--color-kapwa-bg-surface-raised)]">
+            <tr>
+              <th
+                class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-[var(--color-kapwa-text-support)]"
+              >
+                Name
+              </th>
+              <th
+                class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-[var(--color-kapwa-text-support)]"
+              >
+                Email
+              </th>
+              <th
+                class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-[var(--color-kapwa-text-support)]"
+              >
+                Status
+              </th>
+              <th
+                class="px-6 py-3 text-right text-xs font-medium uppercase tracking-wider text-[var(--color-kapwa-text-support)]"
+              >
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[var(--color-kapwa-border-weak)] bg-[var(--color-kapwa-bg-surface)]">
+            <tr class="hover:bg-[var(--color-kapwa-bg-surface-raised)]">
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm font-medium text-[var(--color-kapwa-text-strong)]">Maria Santos</div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-[var(--color-kapwa-text-support)]">maria.santos@example.gov.ph</div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span
+                  class="inline-flex rounded-full px-2 py-1 text-xs font-medium bg-[var(--color-kapwa-bg-success-weak)] text-[var(--color-kapwa-text-success)]"
+                  >Active</span
+                >
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 bg-transparent text-[var(--color-kapwa-text-support)] hover:bg-[var(--color-kapwa-bg-gray-default)] active:bg-[var(--color-kapwa-bg-gray-hover)] focus-visible:ring-[var(--color-kapwa-border-focus)] text-sm px-3 py-1.5 h-8"
+                >
+                  Edit
+                </button>
+              </td>
+            </tr>
+            <tr class="hover:bg-[var(--color-kapwa-bg-surface-raised)]">
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm font-medium text-[var(--color-kapwa-text-strong)]">Juan dela Cruz</div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-[var(--color-kapwa-text-support)]">juan.delacruz@example.gov.ph</div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span
+                  class="inline-flex rounded-full px-2 py-1 text-xs font-medium bg-[var(--color-kapwa-bg-warning-weak)] text-[var(--color-kapwa-text-warning)]"
+                  >Pending</span
+                >
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 bg-transparent text-[var(--color-kapwa-text-support)] hover:bg-[var(--color-kapwa-bg-gray-default)] active:bg-[var(--color-kapwa-bg-gray-hover)] focus-visible:ring-[var(--color-kapwa-border-focus)] text-sm px-3 py-1.5 h-8"
+                >
+                  Edit
+                </button>
+              </td>
+            </tr>
+            <tr class="hover:bg-[var(--color-kapwa-bg-surface-raised)]">
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm font-medium text-[var(--color-kapwa-text-strong)]">Ana Reyes</div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-[var(--color-kapwa-text-support)]">ana.reyes@example.gov.ph</div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span
+                  class="inline-flex rounded-full px-2 py-1 text-xs font-medium bg-[var(--color-kapwa-bg-danger-weak)] text-[var(--color-kapwa-text-danger)]"
+                  >Inactive</span
+                >
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 bg-transparent text-[var(--color-kapwa-text-support)] hover:bg-[var(--color-kapwa-bg-gray-default)] active:bg-[var(--color-kapwa-bg-gray-hover)] focus-visible:ring-[var(--color-kapwa-border-focus)] text-sm px-3 py-1.5 h-8"
+                >
+                  Edit
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </article>
+</section>

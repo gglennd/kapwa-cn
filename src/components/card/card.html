@@ -1,0 +1,56 @@
+<!-- Kapwa Card — container with Header, Content, Image and optional Footer parts. -->
+<section class="grid gap-6 md:grid-cols-2">
+  <section data-demo="card">
+    <article
+      role="article"
+      aria-label="Service card"
+      class="overflow-hidden rounded-lg border border-[var(--color-kapwa-border-weak)] bg-[var(--color-kapwa-bg-surface)] shadow-xs"
+    >
+      <div role="heading" aria-level="2" class="border-b border-[var(--color-kapwa-border-weak)] p-4 md:p-6">
+        <h3 class="text-2xl font-semibold">Renew your license plate</h3>
+        <p class="text-[var(--color-kapwa-text-support)]">Complete the process online</p>
+      </div>
+      <div role="region" aria-label="Service details" class="p-4 md:p-6">
+        <p class="text-sm text-[var(--color-kapwa-text-support)]">
+          Submit your requirements and track the status of your application from any device. No need to visit a physical
+          office.
+        </p>
+      </div>
+      <div
+        class="border-t border-[var(--color-kapwa-border-weak)] bg-[var(--color-kapwa-bg-surface-raised)] p-4 md:p-6"
+      >
+        <button
+          type="button"
+          class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 shadow-xs bg-[var(--color-kapwa-bg-brand-default)] text-[var(--color-kapwa-text-inverse)] hover:bg-[var(--color-kapwa-bg-brand-hover)] active:bg-[var(--color-kapwa-bg-brand-active)] focus-visible:ring-[var(--color-kapwa-border-focus)] text-base px-4 py-2 h-10"
+        >
+          Start application
+        </button>
+      </div>
+    </article>
+  </section>
+
+  <section data-demo="card-image">
+    <article
+      role="article"
+      aria-label="Service card"
+      class="overflow-hidden rounded-lg border border-[var(--color-kapwa-border-weak)] bg-[var(--color-kapwa-bg-surface)] shadow-xs transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+    >
+      <div class="relative h-48 w-full overflow-hidden">
+        <img
+          src="https://picsum.photos/seed/kapwa-card/600/400"
+          alt="Quezon City government building"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div role="heading" aria-level="2" class="border-b border-[var(--color-kapwa-border-weak)] p-4 md:p-6">
+        <h3 class="text-2xl font-semibold">Pay your taxes</h3>
+        <p class="text-[var(--color-kapwa-text-support)]">Multi-channel payment options</p>
+      </div>
+      <div role="region" aria-label="Service details" class="p-4 md:p-6">
+        <p class="text-sm text-[var(--color-kapwa-text-support)]">
+          Pay real property tax through accredited banks and e-wallets with a few simple steps and instant confirmation.
+        </p>
+      </div>
+    </article>
+  </section>
+</section>
