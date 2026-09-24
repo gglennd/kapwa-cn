@@ -6,6 +6,7 @@ export default defineConfig({
   description:
     "Framework-agnostic HTML components for Philippine government portals",
   cleanUrls: true,
+  outDir: "../dist",
   base: "/kapwa-cn/",
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/kapwa-cn/favicon.svg" }],
