@@ -1,0 +1,337 @@
+:root {
+  --vp-font-family-base: "Geist", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+  --vp-c-brand-1: #005df5;
+  --vp-c-brand-2: #0787ff;
+  --vp-c-brand-3: #005df5;
+  --vp-c-brand-soft: rgb(0 93 245 / 14%);
+}
+
+.dark {
+  --vp-c-brand-1: #0787ff;
+  --vp-c-brand-2: #47a7ff;
+  --vp-c-brand-3: #005df5;
+}
+
+/* Home hero — solid, restrained headline (no gradient clip). */
+.VPHero .name {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  letter-spacing: -0.03em;
+  white-space: normal;
+}
+
+.VPHero .name,
+.VPHero .name .clip {
+  -webkit-background-clip: initial;
+  background-image: none;
+  background: none;
+  -webkit-text-fill-color: var(--vp-c-text-1);
+  color: var(--vp-c-text-1);
+}
+
+.VPHero .tagline {
+  max-width: 42rem;
+}
+
+.VPFeature {
+  border-color: var(--vp-c-divider) !important;
+}
+
+.kapwa-demo {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.kapwa-demo__card {
+  overflow: hidden;
+  border: 1px solid var(--color-kapwa-border-weak);
+  border-radius: 1rem;
+  background-color: var(--color-kapwa-bg-surface);
+}
+
+.kapwa-demo__preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 16rem;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  overflow: auto;
+  color: var(--color-kapwa-text-strong);
+  font-family: var(--font-kapwa-sans);
+  background-color: var(--color-kapwa-bg-surface);
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--color-kapwa-border-weak) 50%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}
+
+.kapwa-demo__preview--start,
+.kapwa-demo__preview--start .kapwa-demo__stage {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.kapwa-demo__stage {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kapwa-demo__stage > * {
+  min-width: 0;
+}
+
+.kapwa-demo__code {
+  position: relative;
+  border-top: 1px solid var(--color-kapwa-border-weak);
+  background-color: var(--color-kapwa-bg-surface-raised);
+}
+
+.kapwa-demo__code-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--color-kapwa-bg-surface-raised);
+}
+
+.kapwa-demo__code-label {
+  color: var(--color-kapwa-text-support);
+  font-family: var(--font-kapwa-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kapwa-demo__copy {
+  padding: 0.25rem 0.625rem;
+  border: 1px solid var(--color-kapwa-border-weak);
+  border-radius: 0.375rem;
+  background-color: var(--color-kapwa-bg-surface);
+  color: var(--color-kapwa-text-support);
+  font-family: var(--font-kapwa-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+}
+
+.kapwa-demo__copy:hover {
+  color: var(--color-kapwa-text-brand);
+  border-color: var(--color-kapwa-border-strong);
+}
+
+.kapwa-demo__copy--done {
+  color: var(--color-kapwa-text-success);
+  border-color: color-mix(in oklab, var(--color-kapwa-text-success) 40%, transparent);
+}
+
+.kapwa-demo__code-block {
+  margin: 0;
+  padding: 0.75rem 1.25rem 2rem;
+  max-height: 13rem;
+  overflow: auto;
+  font-family: var(--font-kapwa-mono);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--color-kapwa-text-strong);
+  white-space: pre;
+}
+
+.kapwa-demo__code--open .kapwa-demo__code-block {
+  max-height: 26rem;
+  padding-bottom: 1.25rem;
+}
+
+.kapwa-demo__code-block .tok-tag {
+  color: var(--color-kapwa-text-support);
+}
+
+.kapwa-demo__code-block .tok-name {
+  color: var(--color-kapwa-text-brand);
+}
+
+.kapwa-demo__code-block .tok-attr {
+  color: var(--color-kapwa-text-link);
+}
+
+.kapwa-demo__code-block .tok-value {
+  color: var(--color-kapwa-text-success);
+}
+
+.kapwa-demo__code-block .tok-comment {
+  color: var(--color-kapwa-text-disabled);
+  font-style: italic;
+}
+
+.kapwa-demo__code::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 3rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--color-kapwa-bg-surface-raised));
+  transition: opacity 0.15s;
+}
+
+.kapwa-demo__code--open::after {
+  opacity: 0;
+}
+
+.kapwa-demo__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--color-kapwa-border-weak);
+  padding: 0.625rem;
+  background-color: var(--color-kapwa-bg-surface);
+}
+
+.kapwa-demo__toggle {
+  position: relative;
+  z-index: 2;
+  padding: 0.25rem 0.625rem;
+  border: 0;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  color: var(--color-kapwa-text-support);
+  font-family: var(--font-kapwa-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.kapwa-demo__toggle:hover {
+  color: var(--color-kapwa-text-strong);
+}
+
+.kapwa-demo__note {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-kapwa-text-support);
+}
+
+.kapwa-copy {
+  overflow: hidden;
+  margin: 1rem 0;
+  border: 1px solid var(--color-kapwa-border-weak);
+  border-radius: 1rem;
+  background-color: var(--color-kapwa-bg-surface-raised);
+}
+
+.kapwa-copy__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--color-kapwa-border-weak);
+  background-color: var(--color-kapwa-bg-surface);
+}
+
+.kapwa-copy__label {
+  color: var(--color-kapwa-text-support);
+  font-family: var(--font-kapwa-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kapwa-copy__block {
+  margin: 0;
+  max-height: 32rem;
+  overflow: auto;
+  padding: 1rem 1.25rem;
+  font-family: var(--font-kapwa-mono);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  color: var(--color-kapwa-text-strong);
+  white-space: pre;
+}
+
+.kapwa-copy__block .tok-tag {
+  color: var(--color-kapwa-text-support);
+}
+
+.kapwa-copy__block .tok-name {
+  color: var(--color-kapwa-text-brand);
+}
+
+.kapwa-copy__block .tok-attr {
+  color: var(--color-kapwa-text-link);
+}
+
+.kapwa-copy__block .tok-value {
+  color: var(--color-kapwa-text-success);
+}
+
+.kapwa-copy__block .tok-comment {
+  color: var(--color-kapwa-text-disabled);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .kapwa-demo__preview {
+    min-height: 12rem;
+  }
+
+  .kapwa-demo__code-block {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Neutralize VitePress `.vp-doc` element styles so previews render pure Kapwa. */
+.kapwa-demo__stage h1,
+.kapwa-demo__stage h2,
+.kapwa-demo__stage h3,
+.kapwa-demo__stage h4,
+.kapwa-demo__stage h5,
+.kapwa-demo__stage h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: var(--color-kapwa-text-strong);
+}
+
+.kapwa-demo__stage p {
+  margin: 0;
+}
+
+.kapwa-demo__stage ul,
+.kapwa-demo__stage ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kapwa-demo__stage a {
+  color: var(--color-kapwa-text-link);
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.kapwa-demo__stage table {
+  display: table;
+  width: auto;
+  margin: 0;
+}
+
+.kapwa-demo__stage button {
+  cursor: pointer;
+}
+
+.kapwa-demo__stage button:disabled {
+  cursor: not-allowed;
+}
