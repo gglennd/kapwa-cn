@@ -64,6 +64,12 @@ function renderGallery(): void {
         <a href="#top" class="kapwa-heading-sm text-[var(--color-kapwa-text-strong)]">kapwa-cn</a>
         <div class="flex items-center gap-2">
           <a
+            href="https://gglennd.github.io/kapwa-cn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 bg-[var(--color-kapwa-bg-gray-default)] text-[var(--color-kapwa-text-strong)] hover:bg-[var(--color-kapwa-bg-gray-hover)] active:bg-[var(--color-kapwa-bg-gray-active)] focus-visible:ring-[var(--color-kapwa-border-focus)] text-sm px-3 py-1.5 h-8"
+          >Docs</a>
+          <a
             href="https://github.com/gglennd/kapwa-cn"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,7 +100,7 @@ function renderGallery(): void {
       <section class="mb-14">
         <h1 class="kapwa-heading-xl text-[var(--color-kapwa-text-strong)]">Kapwa component gallery</h1>
         <p class="kapwa-body-lg-default mt-2 text-[var(--color-kapwa-text-support)]">
-          Every component below is plain HTML + Tailwind. Open the docs site for
+          Every component below is plain HTML + Tailwind. Open the <a class="underline" href="https://gglennd.github.io/kapwa-cn/" target="_blank" rel="noopener noreferrer">docs site</a> for
           copyable snippets and framework usage.
         </p>
       </section>

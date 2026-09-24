@@ -2,6 +2,8 @@
 
 Plain HTML + Tailwind components for Philippine government portals. A framework-agnostic port of the [Kapwa](https://github.com/bettergovph/kapwa) design system from BetterGov Philippines — copy a snippet, paste it, done. No build step, no framework lock-in, no custom elements.
 
+[Documentation](https://gglennd.github.io/kapwa-cn/)
+
 ## What you get
 
 - **Copy-paste snippets** — every component is a self-contained `.html` file styled with the Kapwa design tokens. See the live preview, expand the markup, copy what you need.
@@ -50,10 +52,6 @@ pnpm lint       # eslint
 ```
 
 Requires [pnpm](https://pnpm.io/), pinned to `11.24.0`.
-
-## Docs
-
-Component pages live under `docs/components/`, guides under `docs/guides/`. Each component page shows a live preview plus the raw snippet to copy.
 
 ## Acknowledgments
 
