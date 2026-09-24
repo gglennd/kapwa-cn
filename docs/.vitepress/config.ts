@@ -6,7 +6,9 @@ export default defineConfig({
   description:
     "Framework-agnostic HTML components for Philippine government portals",
   cleanUrls: true,
+  base: "/kapwa-cn/",
   head: [
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/kapwa-cn/favicon.svg" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     [
       "link",
@@ -25,12 +27,13 @@ export default defineConfig({
     ],
   ],
   themeConfig: {
-    logo: "/favicon.svg",
+    logo: "/logo.svg",
     nav: [
       { text: "Home", link: "/" },
       { text: "Components", link: "/components/button" },
       { text: "Guides", link: "/guides/getting-started" },
     ],
+    socialLinks: [{ icon: "github", link: "https://github.com/gglennd/kapwa-cn" }],
     sidebar: {
       "/components/": [
         {
@@ -64,7 +67,8 @@ export default defineConfig({
       ],
     },
     footer: {
-      message: "kapwa-cn — framework-agnostic components for Philippine government portals.",
+      message: "kapwa-cn",
+      copyright: "Ported from <a href=\"https://github.com/bettergovph/kapwa\">Kapwa</a>. CC0-1.0.",
     },
   },
   vite: {
